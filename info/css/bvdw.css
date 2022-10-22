@@ -5,6 +5,21 @@ body {
 background-color: white;
 font-style: bierstadt;
 }
+h1 {
+font-size: 4rem;
+line-height: 4rem;
+text-shadow: 0 0 2px black;
+color: #faca30;
+padding-top: 15px;
+margin: 0 0;
+}
+h2 {
+	font-size: 1.5em;
+	text-shadow: 0 0 1px black;
+	color: #faca30;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
 .kop{
 background-color: #d2aa6d;
 color: black;
@@ -16,17 +31,6 @@ border-width: 2px;
 box-shadow: 5px 0 5px gray;
 }
 
-#KMK{
-	background-color: #d2aa6d;
-}
-h1 {
-font-size: 2rem;
-line-height: 2rem;
-text-shadow: 0 0 2px black;
-color: #faca30;
-padding-top: 15px;
-margin: 0 0;
-}
 
 .keuzeMenu {
 list-style: none;
@@ -56,7 +60,7 @@ text-align: center;
 box-shadow: 5px 5px 5px gray;
 border-style: solid;
 border-color: #faca30;
-border-width: 2px 2px 2px 2px;
+border-width: 0 2px 2px 2px;
 
 }
 
@@ -65,20 +69,17 @@ border-width: 2px 2px 2px 2px;
 	flex-grow: 1;
 	width: 160px;
 }
-h2 {
-	font-size: 1em;
-	text-shadow: 0 0 1px black;
-	color: #faca30;
-	margin-top: 0px;
-	margin-bottom: 5px;
+
+#KMK{
+	background-color: #d2aa6d;
 }
+
 .logo {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
-	height: 160px;
 	position: center;
 }
 footer { 
