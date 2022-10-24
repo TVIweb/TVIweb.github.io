@@ -4,6 +4,7 @@ html {
 body {
 background-color: white;
 font-style: roboto;
+
 }
 h1 {
 font-size: 4rem;
@@ -39,7 +40,11 @@ border-width: 2px 2px 0 2px;
 	border-width: 0px 2px 2px 2px;
 	
 }
-
+button {
+	border: none;
+	background-color: transparent;
+	
+}
 #dropbtn {
     background-color: #faca30;
     color: Black;
@@ -181,19 +186,44 @@ h2 {
 	font-size: 1.5em;
 	color: navy;
 	width: 100%;
-	margin-top: 0.2em;
+	margin-top: 1em;
 	margin-bottom: 0.2em;
 	margin-left: 0.2em;
 	text-align: center;
 	padding-bottom: 0.5em;
+	background-color: transparent;
 }
+
 .rijGebak {
 	display: flex;
 	flex-wrap: wrap;
+	flex-basis: 100%;
 	text-align: center;
 	gap: 1em;
 
 }
+.rijGebak >*{
+	flex-grow: 1;
+}
+/* Roll menu initiele poging afbeeldingen spreiden zich helemaal uit over de pagina...
+div.rijGebak > * {
+	overflow-x: auto;
+	overflow-y: hidden;
+  white-space: nowrap;
+}
+
+div.rijGebak a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.rijGebak a:hover {
+  background-color: #777;
+}
+*/
 
 .product {
 	box-shadow: 5px 5px 5px gray;
@@ -202,6 +232,7 @@ h2 {
 	border-width: 2px 0px 0px 2px;
 	
 }
+
 .marpad {
 	margin: 0.2em;
 	padding: 0.2em;
