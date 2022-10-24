@@ -187,6 +187,10 @@ h2 {
 	display: flex;
 	text-align: center;
 	gap: 1em;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	width: 100%;
 }
 .rijGebak > *{
 	flex-basis: 100%;
