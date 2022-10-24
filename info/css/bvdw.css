@@ -104,6 +104,10 @@ border-width: 0 2px 2px 2px;
 	height: 15em;
 	width: 15em;
 }
+.picbreed {
+	height: 10em;
+	width:17,7em;
+}
 #logotrans {width: 15em; height: 15em;}
 footer { 
 color: gray;
@@ -185,21 +189,20 @@ h2 {
 }
 .rijGebak {
 	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 	gap: 1em;
-	overflow-x: auto;
-	overflow-y: hidden;
-	white-space: nowrap;
-	width: 100%;
+
 }
-.rijGebak > *{
-	flex-basis: 100%;
-	flex-wrap: wrap;
-}
+
 .product {
 	box-shadow: 5px 5px 5px gray;
 	border-style: solid;
 	border-color: #faca30;
 	border-width: 2px 0px 0px 2px;
 	
+}
+.marpad {
+	margin: 0.2em;
+	padding: 0.2em;
 }
