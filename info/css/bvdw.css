@@ -1,3 +1,4 @@
+
 html {
 	height: 100%
 }
@@ -24,6 +25,38 @@ border-color: #faca30;
 border-width: 2px 2px 0 2px;
 
 }
+
+
+.logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	position: center;
+}
+
+#logotrans {width: 15em; height: 15em;}
+footer { 
+color: gray;
+font-style: bierstadt;
+text-align: center;
+
+
+}
+
+h2 {
+	font-size: 1.5em;
+	color: navy;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+	margin-left: 0.2em;
+	text-align: center;
+	padding-bottom: 0.5em;
+	background-color: transparent;
+}
+/* keuzemenu opmaak ********************************************************************************/
 .keuzeMenu {
 	display: flex;
 	background-color: #d2aa6d;
@@ -40,6 +73,7 @@ border-width: 2px 2px 0 2px;
 	border-width: 0px 2px 2px 2px;
 	
 }
+/* button opmaak ****************************************************************************/
 button {
 	border: none;
 	background-color: transparent;
@@ -50,92 +84,21 @@ button {
 	
 }
 button:hover {
-  color: Red;
+	color: Red;
 }
-#dropbtn {
-    background-color: #faca30;
-    color: Black;
-	text-shadow: 0 0 1px black;
-    
-    font-size: 1em;
-    border: none;
 
-}
 .drpbtn {
 	font-size: 1em;
 }
-
-/* .keuzeMenu {
-list-style: none;
-margin: 0;
-padding: 0;
-/* kolommen doen rare dingen!
-column-count: 6;
-column-width: 10em;
-column-rule-width: 2px ;
-column-rule-style: solid;
-column-rule-color: #faca30;
-background-color: #d2aa6d;
-
-
-display: grid;
-gap: 2px;
-background-color: #faca30;
-grid-template-columns: repeat(7, 1fr);
-
-flexbox
-display: flex;
-gap:2px;
-flex-wrap: wrap;
-
-background-color: #faca30;
-text-align: center; 
-box-shadow: 5px 5px 5px gray;
-border-style: solid;
-border-color: #faca30;
-border-width: 0 2px 2px 2px;
-}
-
-.keuzeMenu li {
-	flex-shrink: 1;
-	flex-grow: 1;
-	width: 300px;
-}*/
-
-#KMK{
-	background-color: #d2aa6d;
-}
-
-.logo {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-	position: center;
-}
-.pic{
-	height: 15em;
-	width: 15em;
-}
-.picbreed {
-	height: 10em;
-	width:17,7em;
-}
-#logotrans {width: 15em; height: 15em;}
-footer { 
-color: gray;
-font-style: bierstadt;
-text-align: center;
-
-
-}
+/* link opmaak ************************************************************************************************/
 a {
 	text-decoration: none;
+	font-size: 1.2em;
 }
 /* unvisited link */
 a:link {
-  	text-shadow: 0 0 1px black;
+  	text-decoration: shadow;
+	text-shadow: 0 0 1px black;
 	color: black;
 	margin-top: 0px;
 	margin-bottom: 5px;
@@ -161,9 +124,7 @@ a:active {
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
-
-
-
+/* drop down menu ****************************************************************************/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -189,76 +150,42 @@ a:active {
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {color: red;}
 
-/* tot hier loopt de CSS voor de navbar en de titel */
+/* tot hier loopt de CSS voor de navbar en de titel *****************************************************************************/
 
-h2 {
-	font-size: 1.5em;
-	color: navy;
-	width: 100%;
-	margin-top: 1em;
-	margin-bottom: 0.2em;
-	margin-left: 0.2em;
-	text-align: center;
-	padding-bottom: 0.5em;
-	background-color: transparent;
-}
-/* origineel!!!
-.rijGebak {
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 100%;
-	text-align: center;
-	gap: 1em;
+/* start van de css voor de product rijen !!!! *************************************************************************************/
 
-}
-.rijGebak >*{
-	flex-grow: 1;
-}
-*/
 /* side scroll */
 .rijGebak {
-  display: flex;
-  flex-wrap: no-wrap;
-  overflow: scroll; 
-  width: 6000 px;
-  margin: 20px;
-  text-align: center;
-}
-.product {
-  flex: 0 0 auto;
-  width: auto;
-  height: 17em;
-  max-width: 100%;
-  margin-right: 10px;
-} */
-/* Roll menu initiele poging afbeeldingen spreiden zich helemaal uit over de pagina...
-div.rijGebak > * {
-	overflow-x: auto;
+	display: flex;
+	flex-wrap: no-wrap;
+	overflow: scroll; 
 	overflow-y: hidden;
-  white-space: nowrap;
+	padding: 1em;
+	height: 17 em;
+	
+	margin: 1em;
+	text-align: center;
 }
-
-div.rijGebak a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-div.rijGebak a:hover {
-  background-color: #777;
-}
-*/
-
 .product {
-	box-shadow: 5px 5px 5px gray;
+	flex: 0 0 auto;
+	height: 16em;
+	width: 16em;
+	max-width: 100%;
+	margin-right: 10px;
+  	box-shadow: 5px 5px 5px gray;
 	border-style: solid;
 	border-color: #faca30;
 	border-width: 2px 0px 0px 2px;
-	
-}
+} 
 
+.pic{
+	height: 15em;
+	width: 15em;
+}
+.picbreed {
+	height: 10em;
+	width:17,7em;
+}
 .marpad {
 	margin: 0,1em;
 	padding: 0,1 em;
